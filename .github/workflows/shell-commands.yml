@@ -10,3 +10,9 @@ jobs:
         run: |
           node -v
           npm -v
+  second-shell-command:
+    runs-on: ubuntu-latest
+    needs: ["run-shell-command"]
+    steps:
+      - name: also echo
+        run: echo "Howdy"
