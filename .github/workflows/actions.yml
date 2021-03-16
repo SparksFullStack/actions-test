@@ -2,7 +2,7 @@ name: Actions Workflow
 on: [push]
 jobs:
   run-github-actions:
-    uses: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Simple JS Actions
         id: greet
